@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Quiz App</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .question {
+      margin-bottom: 25px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .question p {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin: 6px 0;
+      cursor: pointer;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background: #0070f3;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0059c1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Simple Quiz App</h1>
+
+    <form>
+
+      <!-- Question 1 -->
+      <div class="question">
+        <p>1. Which metal commonly rusts?</p>
+        <label><input type="radio" name="q1" /> Iron</label>
+        <label><input type="radio" name="q1" /> Gold</label>
+        <label><input type="radio" name="q1" /> Silver</label>
+        <label><input type="radio" name="q1" /> Platinum</label>
+        <label><input type="radio" name="q1" /> Lead</label>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p>2. What is the name of the Indian space agency?</p>
+        <label><input type="radio" name="q2" /> ISRO</label>
+        <label><input type="radio" name="q2" /> NASA</label>
+        <label><input type="radio" name="q2" /> ESA</label>
+        <label><input type="radio" name="q2" /> JAXA</label>
+        <label><input type="radio" name="q2" /> Roscosmos</label>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p>3. What does CPU stand for?</p>
+        <label><input type="radio" name="q3" /> Central Processing Unit</label>
+        <label><input type="radio" name="q3" /> Computer Personal Unit</label>
+        <label><input type="radio" name="q3" /> Central Program Utility</label>
+        <label><input type="radio" name="q3" /> Control Processing Unit</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
